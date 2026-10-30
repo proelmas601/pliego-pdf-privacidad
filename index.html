@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad · Pliego PDF</title>
+<meta name="description" content="Política de privacidad de Pliego PDF: qué datos salen del teléfono, cuándo y cómo borrarlos.">
+<style>
+  :root {
+    --bg: #f7f8fa; --surface: #ffffff; --text: #1a1d23; --muted: #5b6270;
+    --line: #e3e6eb; --primary: #2563eb; --primary-soft: rgba(37, 99, 235, .10);
+    --edit: #7c3aed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --surface: #1a1d23; --text: #eceef2; --muted: #a2a9b6;
+      --line: #2a2e36; --primary: #6b9bff; --primary-soft: rgba(107, 155, 255, .14);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  /* Hoja con la esquina doblada, el motivo de la app. */
+  .logo {
+    width: 52px; height: 52px; flex: none; border-radius: 16px; position: relative;
+    background: linear-gradient(135deg, #2563eb, var(--edit));
+    clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+  }
+  .logo::after {
+    content: ""; position: absolute; top: 0; right: 0; width: 16px; height: 16px;
+    background: rgba(255, 255, 255, .45); clip-path: polygon(0 0, 0 100%, 100% 100%);
+  }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0; }
+  .date { color: var(--muted); margin: 0 0 24px; }
+  .lead {
+    background: var(--primary-soft); border-radius: 16px; padding: 16px 20px; margin: 0 0 8px;
+  }
+  h2 { font-size: 20px; margin: 36px 0 12px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+    padding: 16px 20px; margin: 0 0 12px;
+  }
+  .card h3 { font-size: 17px; margin: 0 0 6px; }
+  .card dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; }
+  .card dt { color: var(--muted); }
+  .card dd { margin: 0; }
+  ul { padding-left: 20px; }
+  a { color: var(--primary); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 480px) {
+    .card dl { grid-template-columns: 1fr; gap: 0; }
+    .card dd { margin-bottom: 6px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true"></div>
+    <h1>Política de privacidad de Pliego PDF</h1>
+  </header>
+  <p class="date">Última actualización: 30 de octubre de 2026</p>
+
+  <p class="lead">
+    Pliego PDF procesa tus documentos <strong>en tu teléfono</strong>. El escaneo, el reconocimiento de
+    texto (OCR) y casi todas las herramientas funcionan sin conexión, y tus archivos no salen del
+    dispositivo.
+  </p>
+
+  <h2>Qué datos salen del teléfono y cuándo</h2>
+  <p>Solo cuando usas alguna de estas funciones:</p>
+
+  <div class="card">
+    <h3>Informes de errores</h3>
+    <dl>
+      <dt>Qué se envía</dt><dd>Datos técnicos del fallo: modelo de teléfono, versión de Android y traza del error. Nunca tus documentos ni datos personales.</dd>
+      <dt>Para qué</dt><dd>Corregir fallos.</dd>
+      <dt>Cuánto se guarda</dt><dd>90 días.</dd>
+      <dt>Cómo evitarlo</dt><dd>Desactívalo en Ajustes → Privacidad.</dd>
+    </dl>
+  </div>
+
+  <div class="card">
+    <h3>Cuenta y copia en la nube (si inicias sesión)</h3>
+    <dl>
+      <dt>Qué se envía</dt><dd>Tu correo, y los archivos que decidas guardar en la nube con su nombre.</dd>
+      <dt>Para qué</dt><dd>Guardar y sincronizar tus documentos.</dd>
+      <dt>Cuánto se guarda</dt><dd>Hasta que los borres o borres tu cuenta.</dd>
+    </dl>
+  </div>
+
+  <div class="card">
+    <h3>Conversiones de Office</h3>
+    <dl>
+      <dt>Qué se envía</dt><dd>El archivo que quieres convertir.</dd>
+      <dt>Para qué</dt><dd>Convertirlo.</dd>
+      <dt>Cuánto se guarda</dt><dd>Se borra en menos de 1 hora.</dd>
+    </dl>
+  </div>
+
+  <div class="card">
+    <h3>Funciones de IA (resumen y preguntas)</h3>
+    <dl>
+      <dt>Qué se envía</dt><dd>El texto del documento y tu pregunta.</dd>
+      <dt>Para qué</dt><dd>Generar la respuesta.</dd>
+      <dt>Cuánto se guarda</dt><dd>No se guarda.</dd>
+    </dl>
+  </div>
+
+  <div class="card">
+    <h3>Suscripción Premium</h3>
+    <dl>
+      <dt>Qué se envía</dt><dd>Un identificador anónimo de usuario y el recibo de compra de Google Play. No recibimos tu tarjeta ni tus datos de pago.</dd>
+      <dt>Para qué</dt><dd>Saber si tu suscripción está activa.</dd>
+      <dt>Cuánto se guarda</dt><dd>Mientras tengas la suscripción y lo que exija la ley fiscal.</dd>
+    </dl>
+  </div>
+
+  <p>
+    Todas las conexiones van cifradas (HTTPS/TLS). Los archivos en la nube se guardan cifrados y solo tu
+    cuenta puede leerlos.
+  </p>
+
+  <h2>Lo que no hacemos</h2>
+  <ul>
+    <li>No vendemos ni compartimos tus datos con terceros para publicidad.</li>
+    <li>No usamos rastreo publicitario.</li>
+  </ul>
+
+  <h2>Proveedores</h2>
+  <p>
+    Sentry (informes de errores), Supabase (cuentas y nube), Google Play y RevenueCat (pagos y
+    suscripciones) y Anthropic (funciones de IA). Cada uno trata los datos solo para prestar ese servicio.
+  </p>
+
+  <h2 id="borrar-cuenta">Borrar tu cuenta y tus datos</h2>
+  <ul>
+    <li><strong>Desde la app:</strong> Ajustes → Cuenta y nube → Borrar mi cuenta. Se borran tu cuenta y
+      todos tus documentos en la nube. Los documentos de tu teléfono no se tocan.</li>
+    <li><strong>Sin la app:</strong> escribe a <a href="mailto:tecnodiagmarch@gmail.com">tecnodiagmarch@gmail.com</a> desde el
+      correo de tu cuenta con el asunto "Borrar mi cuenta". La borramos en un máximo de 30 días.</li>
+  </ul>
+
+  <h2>Tus derechos</h2>
+  <p>
+    Puedes pedir acceso, rectificación o supresión de tus datos escribiendo a
+    <a href="mailto:tecnodiagmarch@gmail.com">tecnodiagmarch@gmail.com</a>.
+  </p>
+
+  <h2>Menores</h2>
+  <p>La app no está dirigida a menores de 13 años.</p>
+
+  <footer>Pliego PDF · TecnoDiagmarGames · Colombia</footer>
+</main>
+</body>
+</html>
